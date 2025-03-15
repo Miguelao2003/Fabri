@@ -26,7 +26,7 @@ const Home = () => {
 
     try {
       // Realizamos la solicitud POST a la API de Flask
-      const response = await axios.post("http://localhost:8000/upload", formData, {
+      const response = await axios.post("http://159.203.190.94:8000/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data", // Aseguramos que el tipo de contenido sea 'multipart/form-data'
         },
